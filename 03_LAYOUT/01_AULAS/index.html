@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Leyout -->
+
+    <!-- Breakpoints -->
+    <h1>Seção de Layout</h1>
+    <button class="btn btn-primary">Clica em mim</button>
+
+    <!-- Container -->
+    <div class="container">
+        <h2>Titulo da seção</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eveniet minima eos exercitationem architecto atque. Perferendis non dolore, libero officia repellat maiores similique voluptas iure esse architecto error nam delectus!</p>
+    </div>
+
+    <!-- Container Fluid -->
+    <div class="container-fluid">
+        <h2>Titulo da seção</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eveniet minima eos exercitationem architecto atque. Perferendis non dolore, libero officia repellat maiores similique voluptas iure esse architecto error nam delectus!</p>
+    </div>
+
+    <!-- Container por Breakpoints -->
+    <div class="container-sm">
+        <h2>Titulo da seção</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eveniet minima eos exercitationem architecto atque. Perferendis non dolore, libero officia repellat maiores similique voluptas iure esse architecto error nam delectus!</p>
+    </div>
+    <div class="container-md">
+        <h2>Titulo da seção</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eveniet minima eos exercitationem architecto atque. Perferendis non dolore, libero officia repellat maiores similique voluptas iure esse architecto error nam delectus!</p>
+    </div>
+    <div class="container-lg">
+        <h2>Titulo da seção</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eveniet minima eos exercitationem architecto atque. Perferendis non dolore, libero officia repellat maiores similique voluptas iure esse architecto error nam delectus!</p>
+    </div>
+
+
+    <!-- Grid -->
+    <div class="container espaco">
+        <div class="row">
+            <div class="col">
+                <h2>Produto A</h2>
+            </div>
+            <div class="col">
+                <h2>Produto B</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Produto C</h2>
+            </div>
+            <div class="col">
+                <h2>Produto D</h2>
+            </div>
+            <div class="col">
+                <h2>Produto E</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tamanhos da colunas -->
+    <div class="container espaco">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-11"></div>
+        </div>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+
+    <div class="container espaco" id="largura-limitada">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+
+    <!-- Limitaçao de Colunas -->
+    <div class="container espaco">
+        <div class="row row-cols-2">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row row-cols-2">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row row-cols-2">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <!-- Alinhamento vertical -->
+    <div class="container vertical">
+        <div class="row align-items-end">
+            <div class="col-6"></div>
+            <div class="col-6"></div>
+        </div>
+    </div>
+
+    <div class="container vertical espaco">
+        <div class="row align-items-center">
+            <div class="col-6"></div>
+            <div class="col-6"></div>
+        </div>
+    </div>
+
+    <!-- Alinhamento horizontal -->
+    <div class="container vertical">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+    <div class="container vertical espaco">
+        <div class="row justify-content-end">
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+    <!-- Alinhamento de itens -->
+    <div class="container vertical">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3 align-self-center"></div>
+            <div class="col-3"></div>
+            <div class="col-3 align-self-center"></div>
+        </div>
+    </div>
+
+    <div class="container vertical espaco">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 align-self-center"></div>
+            <div class="col-4 align-self-end"></div>
+        </div>
+    </div>
+
+    <!-- order -->
+    <div class="container vertical espaco">
+        <div class="row">
+            <div class="col-sm-12 col-3 order-3">3</div>
+            <div class="col-sm-12 col-3 order-4">4</div>
+            <div class="col-sm-12 col-3 order-1">1</div>
+            <div class="col-sm-12 col-3 order-2">2</div>
+        </div>
+    </div>
+
+    <!-- Offset -->
+    <div class="container" id="offset">
+        <div class="row">
+            <div class="col-md-3 offset-md-1"></div>
+        </div>
+    </div>
+    <div class="container" id="offset">
+        <div class="row">
+            <div class="col-md-3 offset-md-2"></div>
+        </div>
+    </div>
+    <div class="container" id="offset">
+        <div class="row">
+            <div class="col-md-3 offset-md-3"></div>
+        </div>
+    </div>
+    <div class="container" id="offset">
+        <div class="row">
+            <div class="col-md-3 offset-md-4"></div>
+        </div>
+    </div>
+    <div class="container" id="offset">
+        <div class="row">
+            <div class="col-md-3 offset-md-5"></div>
+        </div>
+    </div>
+    <div class="container" id="offset">
+        <div class="row">
+            <div class="col-md-3 offset-md-6"></div>
+        </div>
+    </div>    <div class="container" id="offset">
+        <div class="row">
+            <div class="col-md-3 offset-md-7"></div>
+        </div>
+    </div>
+    <div class="container" id="offset">
+        <div class="row">
+            <div class="col-md-3 offset-md-8"></div>
+        </div>
+    </div>
+    <div class="container espaco" id="offset">
+        <div class="row">
+            <div class="col-md-3 offset-md-9"></div>
+        </div>
+    </div>
+
+    <!-- Gutters -->
+    <div class="container" id="gutter">
+        <div class="row gx-5">
+            <div class="col">
+                <p>GX</p>
+            </div>
+            <div class="col">
+                <p>GX</p>
+            </div>
+        </div>
+        <div class="row gy-2">
+            <div class="col">
+                <p>GY</p>
+            </div>
+            <div class="col">
+                <p>GY</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

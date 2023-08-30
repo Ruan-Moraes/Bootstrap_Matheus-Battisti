@@ -1,0 +1,136 @@
+/* XS */
+h1 {
+    color: red;
+}
+
+.btn-primary {
+    background-color: red;
+}
+
+/* Breakpoints */
+    /* SM >= 576px */
+@media screen and (min-width: 576px) {
+    h1 {
+        color: blue;
+    }
+}
+
+    /* MD >= 768px */
+@media screen and (min-width: 768px) {
+    h1 {
+        color: purple;
+    }
+}
+
+    /* LG >= 992px */
+@media screen and (min-width: 992px) {
+    h1 {
+        color: green;
+    }
+}
+
+    /* XL >= 1200px */
+@media screen and (min-width: 1200px) {
+    h1 {
+        color: aquamarine;
+    }
+}
+
+    /* XXL >= 1400px */
+@media screen and (min-width: 1400px) {
+    h1 {
+        color: goldenrod;
+    }
+}
+
+/* Container */
+.container {
+    background-color: #999;
+}
+
+/* Container-fluid */
+.container-fluid {
+    background-color: #ccc;
+}
+
+/* Container por Breakpoints */
+.container-sm {
+    border: 2px solid blue;
+    margin-bottom: 30px;
+}
+
+.container-md {
+    border: 2px solid crimson;
+    margin-bottom: 30px;
+}
+
+.container-lg {
+    border: 2px solid chocolate;
+    margin-bottom: 30px;
+}
+
+/* Grid & Tamanhos da colunas & Limitaçao de Colunas */
+.container {
+    border: 5px dotted blue;
+    padding: 10px;
+}
+
+.espaco {
+    margin-bottom: 80px;
+}
+
+.row {
+    border: 5px solid purple;
+    height: 100px;
+    padding: 10px;
+    margin: 0;
+}
+
+.col,
+.col-4,
+.col-2,
+.col-11,
+.col-1,
+.col-6,
+.col-3 {
+    border: 2px dashed red;
+    height: 100%;
+    margin: 0;
+}
+
+#largura-limitada {
+    max-width: 500px;
+}
+
+/* Alinhamento vertical & Alinhamento horizontal & Alinhamento de item */
+.vertical {
+    height: 250px;
+    border-color: coral;
+}
+
+.vertical .row {
+    height: 100%;
+}
+
+.col-6,
+.col-3,
+.col-4 {
+    height: 50px;
+}
+
+/* Offset */
+
+#offset {
+    height: auto;
+}
+
+#offset .col-md-3 {
+    height: 50px;
+    border: 2px solid red;
+}
+
+/* Gutter */
+
+#gutter .col {
+    border: 1px solid green;
+}

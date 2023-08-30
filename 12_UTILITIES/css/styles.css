@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    padding-bottom: 1000px;
+}
+
+.col-12 {
+    height: 4rem;
+}
+
+.altura {
+    height: 500px;
+}
+
+.box {
+    border: 1px solid red;
+}
+
+.box-com-wrap {
+    width: 50px;
+    border: 1px solid red;
+}

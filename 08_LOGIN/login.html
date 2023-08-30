@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-md-2 d-flex flex-column justify-content-center">
+                <h1>Faça o Login para continuar</h1>
+                <form>
+                    <div class="form-floating">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu e-mail">
+                        <label for="email" class="form-label">Digite seu e-mail</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Digite sua senha">
+                        <label for="password" class="form-label">Digite sua senha</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="keep-connected" id="keep-connected" class="form-check-input">
+                        <label for="keep-connected" class="form-check-label">Manter conectado neste computador.</a></label>
+                    </div>
+                    <div class="my-4">
+                        <input type="submit" class="btn btn-primary" value="Entrar">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 order-md-1 d-flex flex-column justify-content-center align-items-center gap-4">
+                <img src="medias/login.svg" alt="#" class="img-fluid">
+                <p><a href="register.html">Ainda eu não tenho cadastro.</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

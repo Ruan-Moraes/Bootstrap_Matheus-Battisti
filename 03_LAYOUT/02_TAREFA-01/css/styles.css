@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.impar,
+.par {
+    height: 100px;
+}
+
+.impar {
+    background-color: crimson;
+    color: white;
+    border: 2px solid bisque;
+}
+
+.par {
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid chocolate;
+}

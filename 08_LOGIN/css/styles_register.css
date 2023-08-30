@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+h1 {
+    margin: 0;
+}
+
+.my-4 {
+    margin-top: 1rem !important;
+}
+
+.my-4 {
+    margin-bottom: 0 !important;
+}

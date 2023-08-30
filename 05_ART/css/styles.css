@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+.container-fluid,
+.container {
+    padding: 0;
+}
+
+header img {
+    display: inline-block;
+    width: 2.5rem;
+}
+
+.division-separation {
+    border-bottom: 1px solid #ccc;
+}
+.division-separation_one {
+    display: block;
+}
+.division-separation_two {
+    display: none;
+}
+
+header > nav a {
+    color: black;
+    text-decoration: none;
+    transition: .4s;
+}
+
+header > nav a:hover {
+    color: #c1b696;
+}
+
+#main_banner {
+    position: relative;
+    height: 450px;
+    background: #eee url(../img/g_1.jpg) no-repeat scroll center center;
+    background-size: cover;
+}
+
+#card {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 310px;
+    padding: 1.5625rem;
+    background-color: white;
+    border: 0;
+    border-radius: 0;
+}
+
+#card p {
+    color: #666;
+}
+
+.btn {
+    width: 6.25rem;
+    border-radius: 0;
+}
+
+.text-center {
+    margin: 2rem 0 .25rem 0;
+    letter-spacing: 2px;
+}
+
+.row {
+    width: 100%;
+}
+
+.banners_cards {
+    height: 250px;
+    margin-bottom: 1.25rem;
+    background: #eee no-repeat scroll center center;
+    background-size: cover;
+}
+
+#banner_1 {
+    background-image: url(../img/g_2.jpg);
+}
+#banner_2 {
+    background-image: url(../img/g_3.jpg);
+}
+#banner_3 {
+    background-image: url(../img/g_4.jpg);
+}
+#banner_4 {
+    background-image: url(../img/g_5.jpg);
+}
+#banner_5 {
+    background-image: url(../img/g_6.jpg);
+}
+
+.col-md-6 {
+   margin: 0 .75rem 1.25rem .75rem;
+}
+
+.banner-separation {
+    border-bottom: 1px solid black;
+}
+
+footer {
+    color: #666;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .division-separation {
+        display: block;
+    }
+
+    #card {
+        width: 370px;
+        position: absolute;
+        bottom: 1.5625rem;
+        left: 1.5625rem;
+        transform: translate(0);
+    }
+
+    .row {
+        width: auto;
+    }
+
+    .text-center {
+        margin: 2rem 0 1rem 0;
+    }
+
+    .col-md-6 {
+        margin: 0 0 1.5625rem 0;
+    }
+    .col-md-6:nth-child(odd) {
+        padding: 0;
+        padding-right: 1.5625rem;
+    }
+    .col-md-6:nth-child(even) {
+        padding: 0;
+        padding-left: 1.5625rem;
+    }
+}

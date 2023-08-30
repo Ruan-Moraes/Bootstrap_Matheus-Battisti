@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
+    <script src="js/scripts.js" defer></script>
+    <title>Componentes 2</title>
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Meu Projeto</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Produtos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a href="#" class="dropdown-item">Item 1</a></li>
+                                <li><a href="#" class="dropdown-item">Item 2</a></li>
+                                <li><a href="#" class="dropdown-item">Item 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Blog</a>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contato</a>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- NavBar 2 -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Meu Projeto</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav2">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex">
+                    <input type="search" class="form-control me-2" placeholder="Digite algo..." aria-label="Search">
+                    <button type="submit" class="btn btn-outline-primary">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Off canvas -->
+    <div class="container m-4">
+        <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-right" aria-controls="offcanvas-right">
+            Abrir carrinho
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-right" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasLabel">Carrinho</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li>Produto 1</li>
+                    <li>Produto 2</li>
+                    <li>Produto 3</li>
+                    <li>Produto 4</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paginação -->
+    <div class="container m-4">
+        <nav aria-label="Page Navigation">
+            <ul class="pagination">
+                <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link active">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Popover -->
+    <div class="container m-4">
+        <button type="button" class="btn btn-lg btn-success" data-bs-toggle="Popover" title="Este é um título" data-bs-content="E aqui podemos inserir a descrição">
+            Clique aqui
+        </button>
+
+        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="Popover" title="Este é um título 2" data-bs-content="E aqui podemos inserir a descrição 2">
+            Clique aqui
+        </button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="container m-4">
+        <div class="progress m-4">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress m-4">
+            <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+        </div>
+        <div class="progress m-4">
+            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+        </div>
+        <div class="progress m-4">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background-color: red;"></div>
+        </div>
+        <div class="progress m-4">
+            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%; background-color: blueviolet;"></div>
+        </div>
+    </div>
+
+    <!-- Scrollspy -->
+    <nav id="scrollspy" class="navbar navbar-light bg-light px-3 m-4">
+        <a href="#" class="navbar-brand">Minha Marca</a>
+        <ul class="nav">
+            <li class="nav-item"><a href="#secao-1" class="nav-links">Seção 1</a></li>
+            <li class="nav-item"><a href="#secao-2" class="nav-links">Seção 2</a></li>
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="0" tabindex="0">
+        <h4 id="secao-1">Seção 1</h4>
+        <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsum, non, esse quod ullam at, nostrum cupiditate tempora nobis cumque voluptatibus nihil maxime commodi sunt veniam repudiandae nesciunt quibusdam? Quisquam, laboriosam dolor ea recusandae sapiente eveniet quia alias temporibus praesentium quam nulla nesciunt ex, modi consequuntur quaerat beatae nisi incidunt exercitationem corrupti. Voluptatibus iusto nemo odit, deleniti aperiam, error non est sunt sequi minus aspernatur animi nulla aut quasi. Nulla eaque, ullam voluptatem impedit quasi ipsum sit eveniet similique vero et aut saepe labore iusto odio fuga rerum molestias possimus neque deleniti quas, velit assumenda culpa nobis! Provident facere corrupti nihil nesciunt veniam maxime iure rem sint harum quos optio beatae consequatur est illo facilis excepturi suscipit animi pariatur fuga, molestiae saepe. Iste eum ducimus praesentium consequatur recusandae obcaecati architecto laborum error? Adipisci quas quasi similique aliquid vero ut optio? Numquam a reiciendis pariatur delectus labore quis aut recusandae nulla voluptatibus soluta perferendis, aspernatur veritatis, error nesciunt maiores atque saepe explicabo repellendus adipisci quas laborum qui quos! Sapiente quia, provident rem saepe omnis modi quibusdam ea officia, voluptatibus ipsa ullam unde eveniet sequi repudiandae, voluptatum architecto inventore repellendus! Omnis debitis praesentium ex dignissimos nemo earum delectus id doloremque magni! Exercitationem?</p>
+        <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsum, non, esse quod ullam at, nostrum cupiditate tempora nobis cumque voluptatibus nihil maxime commodi sunt veniam repudiandae nesciunt quibusdam? Quisquam, laboriosam dolor ea recusandae sapiente eveniet quia alias temporibus praesentium quam nulla nesciunt ex, modi consequuntur quaerat beatae nisi incidunt exercitationem corrupti. Voluptatibus iusto nemo odit, deleniti aperiam, error non est sunt sequi minus aspernatur animi nulla aut quasi. Nulla eaque, ullam voluptatem impedit quasi ipsum sit eveniet similique vero et aut saepe labore iusto odio fuga rerum molestias possimus neque deleniti quas, velit assumenda culpa nobis! Provident facere corrupti nihil nesciunt veniam maxime iure rem sint harum quos optio beatae consequatur est illo facilis excepturi suscipit animi pariatur fuga, molestiae saepe. Iste eum ducimus praesentium consequatur recusandae obcaecati architecto laborum error? Adipisci quas quasi similique aliquid vero ut optio? Numquam a reiciendis pariatur delectus labore quis aut recusandae nulla voluptatibus soluta perferendis, aspernatur veritatis, error nesciunt maiores atque saepe explicabo repellendus adipisci quas laborum qui quos! Sapiente quia, provident rem saepe omnis modi quibusdam ea officia, voluptatibus ipsa ullam unde eveniet sequi repudiandae, voluptatum architecto inventore repellendus! Omnis debitis praesentium ex dignissimos nemo earum delectus id doloremque magni! Exercitationem?</p>
+        <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsum, non, esse quod ullam at, nostrum cupiditate tempora nobis cumque voluptatibus nihil maxime commodi sunt veniam repudiandae nesciunt quibusdam? Quisquam, laboriosam dolor ea recusandae sapiente eveniet quia alias temporibus praesentium quam nulla nesciunt ex, modi consequuntur quaerat beatae nisi incidunt exercitationem corrupti. Voluptatibus iusto nemo odit, deleniti aperiam, error non est sunt sequi minus aspernatur animi nulla aut quasi. Nulla eaque, ullam voluptatem impedit quasi ipsum sit eveniet similique vero et aut saepe labore iusto odio fuga rerum molestias possimus neque deleniti quas, velit assumenda culpa nobis! Provident facere corrupti nihil nesciunt veniam maxime iure rem sint harum quos optio beatae consequatur est illo facilis excepturi suscipit animi pariatur fuga, molestiae saepe. Iste eum ducimus praesentium consequatur recusandae obcaecati architecto laborum error? Adipisci quas quasi similique aliquid vero ut optio? Numquam a reiciendis pariatur delectus labore quis aut recusandae nulla voluptatibus soluta perferendis, aspernatur veritatis, error nesciunt maiores atque saepe explicabo repellendus adipisci quas laborum qui quos! Sapiente quia, provident rem saepe omnis modi quibusdam ea officia, voluptatibus ipsa ullam unde eveniet sequi repudiandae, voluptatum architecto inventore repellendus! Omnis debitis praesentium ex dignissimos nemo earum delectus id doloremque magni! Exercitationem?</p>
+        <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsum, non, esse quod ullam at, nostrum cupiditate tempora nobis cumque voluptatibus nihil maxime commodi sunt veniam repudiandae nesciunt quibusdam? Quisquam, laboriosam dolor ea recusandae sapiente eveniet quia alias temporibus praesentium quam nulla nesciunt ex, modi consequuntur quaerat beatae nisi incidunt exercitationem corrupti. Voluptatibus iusto nemo odit, deleniti aperiam, error non est sunt sequi minus aspernatur animi nulla aut quasi. Nulla eaque, ullam voluptatem impedit quasi ipsum sit eveniet similique vero et aut saepe labore iusto odio fuga rerum molestias possimus neque deleniti quas, velit assumenda culpa nobis! Provident facere corrupti nihil nesciunt veniam maxime iure rem sint harum quos optio beatae consequatur est illo facilis excepturi suscipit animi pariatur fuga, molestiae saepe. Iste eum ducimus praesentium consequatur recusandae obcaecati architecto laborum error? Adipisci quas quasi similique aliquid vero ut optio? Numquam a reiciendis pariatur delectus labore quis aut recusandae nulla voluptatibus soluta perferendis, aspernatur veritatis, error nesciunt maiores atque saepe explicabo repellendus adipisci quas laborum qui quos! Sapiente quia, provident rem saepe omnis modi quibusdam ea officia, voluptatibus ipsa ullam unde eveniet sequi repudiandae, voluptatum architecto inventore repellendus! Omnis debitis praesentium ex dignissimos nemo earum delectus id doloremque magni! Exercitationem?</p>
+        <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsum, non, esse quod ullam at, nostrum cupiditate tempora nobis cumque voluptatibus nihil maxime commodi sunt veniam repudiandae nesciunt quibusdam? Quisquam, laboriosam dolor ea recusandae sapiente eveniet quia alias temporibus praesentium quam nulla nesciunt ex, modi consequuntur quaerat beatae nisi incidunt exercitationem corrupti. Voluptatibus iusto nemo odit, deleniti aperiam, error non est sunt sequi minus aspernatur animi nulla aut quasi. Nulla eaque, ullam voluptatem impedit quasi ipsum sit eveniet similique vero et aut saepe labore iusto odio fuga rerum molestias possimus neque deleniti quas, velit assumenda culpa nobis! Provident facere corrupti nihil nesciunt veniam maxime iure rem sint harum quos optio beatae consequatur est illo facilis excepturi suscipit animi pariatur fuga, molestiae saepe. Iste eum ducimus praesentium consequatur recusandae obcaecati architecto laborum error? Adipisci quas quasi similique aliquid vero ut optio? Numquam a reiciendis pariatur delectus labore quis aut recusandae nulla voluptatibus soluta perferendis, aspernatur veritatis, error nesciunt maiores atque saepe explicabo repellendus adipisci quas laborum qui quos! Sapiente quia, provident rem saepe omnis modi quibusdam ea officia, voluptatibus ipsa ullam unde eveniet sequi repudiandae, voluptatum architecto inventore repellendus! Omnis debitis praesentium ex dignissimos nemo earum delectus id doloremque magni! Exercitationem?</p>
+        <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsum, non, esse quod ullam at, nostrum cupiditate tempora nobis cumque voluptatibus nihil maxime commodi sunt veniam repudiandae nesciunt quibusdam? Quisquam, laboriosam dolor ea recusandae sapiente eveniet quia alias temporibus praesentium quam nulla nesciunt ex, modi consequuntur quaerat beatae nisi incidunt exercitationem corrupti. Voluptatibus iusto nemo odit, deleniti aperiam, error non est sunt sequi minus aspernatur animi nulla aut quasi. Nulla eaque, ullam voluptatem impedit quasi ipsum sit eveniet similique vero et aut saepe labore iusto odio fuga rerum molestias possimus neque deleniti quas, velit assumenda culpa nobis! Provident facere corrupti nihil nesciunt veniam maxime iure rem sint harum quos optio beatae consequatur est illo facilis excepturi suscipit animi pariatur fuga, molestiae saepe. Iste eum ducimus praesentium consequatur recusandae obcaecati architecto laborum error? Adipisci quas quasi similique aliquid vero ut optio? Numquam a reiciendis pariatur delectus labore quis aut recusandae nulla voluptatibus soluta perferendis, aspernatur veritatis, error nesciunt maiores atque saepe explicabo repellendus adipisci quas laborum qui quos! Sapiente quia, provident rem saepe omnis modi quibusdam ea officia, voluptatibus ipsa ullam unde eveniet sequi repudiandae, voluptatum architecto inventore repellendus! Omnis debitis praesentium ex dignissimos nemo earum delectus id doloremque magni! Exercitationem?</p>
+
+        <h4 id="secao-2">Seção 2</h4>
+        <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsum, non, esse quod ullam at, nostrum cupiditate tempora nobis cumque voluptatibus nihil maxime commodi sunt veniam repudiandae nesciunt quibusdam? Quisquam, laboriosam dolor ea recusandae sapiente eveniet quia alias temporibus praesentium quam nulla nesciunt ex, modi consequuntur quaerat beatae nisi incidunt exercitationem corrupti. Voluptatibus iusto nemo odit, deleniti aperiam, error non est sunt sequi minus aspernatur animi nulla aut quasi. Nulla eaque, ullam voluptatem impedit quasi ipsum sit eveniet similique vero et aut saepe labore iusto odio fuga rerum molestias possimus neque deleniti quas, velit assumenda culpa nobis! Provident facere corrupti nihil nesciunt veniam maxime iure rem sint harum quos optio beatae consequatur est illo facilis excepturi suscipit animi pariatur fuga, molestiae saepe. Iste eum ducimus praesentium consequatur recusandae obcaecati architecto laborum error? Adipisci quas quasi similique aliquid vero ut optio? Numquam a reiciendis pariatur delectus labore quis aut recusandae nulla voluptatibus soluta perferendis, aspernatur veritatis, error nesciunt maiores atque saepe explicabo repellendus adipisci quas laborum qui quos! Sapiente quia, provident rem saepe omnis modi quibusdam ea officia, voluptatibus ipsa ullam unde eveniet sequi repudiandae, voluptatum architecto inventore repellendus! Omnis debitis praesentium ex dignissimos nemo earum delectus id doloremque magni! Exercitationem?</p>
+        <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsum, non, esse quod ullam at, nostrum cupiditate tempora nobis cumque voluptatibus nihil maxime commodi sunt veniam repudiandae nesciunt quibusdam? Quisquam, laboriosam dolor ea recusandae sapiente eveniet quia alias temporibus praesentium quam nulla nesciunt ex, modi consequuntur quaerat beatae nisi incidunt exercitationem corrupti. Voluptatibus iusto nemo odit, deleniti aperiam, error non est sunt sequi minus aspernatur animi nulla aut quasi. Nulla eaque, ullam voluptatem impedit quasi ipsum sit eveniet similique vero et aut saepe labore iusto odio fuga rerum molestias possimus neque deleniti quas, velit assumenda culpa nobis! Provident facere corrupti nihil nesciunt veniam maxime iure rem sint harum quos optio beatae consequatur est illo facilis excepturi suscipit animi pariatur fuga, molestiae saepe. Iste eum ducimus praesentium consequatur recusandae obcaecati architecto laborum error? Adipisci quas quasi similique aliquid vero ut optio? Numquam a reiciendis pariatur delectus labore quis aut recusandae nulla voluptatibus soluta perferendis, aspernatur veritatis, error nesciunt maiores atque saepe explicabo repellendus adipisci quas laborum qui quos! Sapiente quia, provident rem saepe omnis modi quibusdam ea officia, voluptatibus ipsa ullam unde eveniet sequi repudiandae, voluptatum architecto inventore repellendus! Omnis debitis praesentium ex dignissimos nemo earum delectus id doloremque magni! Exercitationem?</p>
+        <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsum, non, esse quod ullam at, nostrum cupiditate tempora nobis cumque voluptatibus nihil maxime commodi sunt veniam repudiandae nesciunt quibusdam? Quisquam, laboriosam dolor ea recusandae sapiente eveniet quia alias temporibus praesentium quam nulla nesciunt ex, modi consequuntur quaerat beatae nisi incidunt exercitationem corrupti. Voluptatibus iusto nemo odit, deleniti aperiam, error non est sunt sequi minus aspernatur animi nulla aut quasi. Nulla eaque, ullam voluptatem impedit quasi ipsum sit eveniet similique vero et aut saepe labore iusto odio fuga rerum molestias possimus neque deleniti quas, velit assumenda culpa nobis! Provident facere corrupti nihil nesciunt veniam maxime iure rem sint harum quos optio beatae consequatur est illo facilis excepturi suscipit animi pariatur fuga, molestiae saepe. Iste eum ducimus praesentium consequatur recusandae obcaecati architecto laborum error? Adipisci quas quasi similique aliquid vero ut optio? Numquam a reiciendis pariatur delectus labore quis aut recusandae nulla voluptatibus soluta perferendis, aspernatur veritatis, error nesciunt maiores atque saepe explicabo repellendus adipisci quas laborum qui quos! Sapiente quia, provident rem saepe omnis modi quibusdam ea officia, voluptatibus ipsa ullam unde eveniet sequi repudiandae, voluptatum architecto inventore repellendus! Omnis debitis praesentium ex dignissimos nemo earum delectus id doloremque magni! Exercitationem?</p>
+        <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsum, non, esse quod ullam at, nostrum cupiditate tempora nobis cumque voluptatibus nihil maxime commodi sunt veniam repudiandae nesciunt quibusdam? Quisquam, laboriosam dolor ea recusandae sapiente eveniet quia alias temporibus praesentium quam nulla nesciunt ex, modi consequuntur quaerat beatae nisi incidunt exercitationem corrupti. Voluptatibus iusto nemo odit, deleniti aperiam, error non est sunt sequi minus aspernatur animi nulla aut quasi. Nulla eaque, ullam voluptatem impedit quasi ipsum sit eveniet similique vero et aut saepe labore iusto odio fuga rerum molestias possimus neque deleniti quas, velit assumenda culpa nobis! Provident facere corrupti nihil nesciunt veniam maxime iure rem sint harum quos optio beatae consequatur est illo facilis excepturi suscipit animi pariatur fuga, molestiae saepe. Iste eum ducimus praesentium consequatur recusandae obcaecati architecto laborum error? Adipisci quas quasi similique aliquid vero ut optio? Numquam a reiciendis pariatur delectus labore quis aut recusandae nulla voluptatibus soluta perferendis, aspernatur veritatis, error nesciunt maiores atque saepe explicabo repellendus adipisci quas laborum qui quos! Sapiente quia, provident rem saepe omnis modi quibusdam ea officia, voluptatibus ipsa ullam unde eveniet sequi repudiandae, voluptatum architecto inventore repellendus! Omnis debitis praesentium ex dignissimos nemo earum delectus id doloremque magni! Exercitationem?</p>
+        <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsum, non, esse quod ullam at, nostrum cupiditate tempora nobis cumque voluptatibus nihil maxime commodi sunt veniam repudiandae nesciunt quibusdam? Quisquam, laboriosam dolor ea recusandae sapiente eveniet quia alias temporibus praesentium quam nulla nesciunt ex, modi consequuntur quaerat beatae nisi incidunt exercitationem corrupti. Voluptatibus iusto nemo odit, deleniti aperiam, error non est sunt sequi minus aspernatur animi nulla aut quasi. Nulla eaque, ullam voluptatem impedit quasi ipsum sit eveniet similique vero et aut saepe labore iusto odio fuga rerum molestias possimus neque deleniti quas, velit assumenda culpa nobis! Provident facere corrupti nihil nesciunt veniam maxime iure rem sint harum quos optio beatae consequatur est illo facilis excepturi suscipit animi pariatur fuga, molestiae saepe. Iste eum ducimus praesentium consequatur recusandae obcaecati architecto laborum error? Adipisci quas quasi similique aliquid vero ut optio? Numquam a reiciendis pariatur delectus labore quis aut recusandae nulla voluptatibus soluta perferendis, aspernatur veritatis, error nesciunt maiores atque saepe explicabo repellendus adipisci quas laborum qui quos! Sapiente quia, provident rem saepe omnis modi quibusdam ea officia, voluptatibus ipsa ullam unde eveniet sequi repudiandae, voluptatum architecto inventore repellendus! Omnis debitis praesentium ex dignissimos nemo earum delectus id doloremque magni! Exercitationem?</p>
+    </div>
+
+    <!-- Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11;">
+        <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Sistema</strong>
+                <small>11 minutos atrás</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">Esta é a mensagem do Sistema...</div>
+        </div>
+    </div>
+
+    <!-- Tooltip -->
+    <div class="container">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Aqui vai uma dica!">Este botão tem ToolTip</button>
+    </div>
+</body>
+
+</html>

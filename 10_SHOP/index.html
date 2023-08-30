@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <title>Loja de Relógios</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="p-0 navbar navbar-expand-lg">
+
+            <div class="py-4 container-fluid navbar-dark bg-dark">
+                <div class="container flex-lg-row" id="first-navigation-content">
+                    <div>
+                        <h1>
+                            <a href="#">Nome da Loja</a>
+                        </h1>
+                    </div>
+                    <div class="search">
+                        <i class="bi bi-search"></i>
+                        <form class="input-group">
+                            <input type="search" class="form-control" placeholder="Digite algum relógio"
+                                aria-label="Digite algum relógio" aria-describedby="search-button">
+                            <button type="button" class="btn form-button">Pesquisar</button>
+                        </form>
+                    </div>
+                    <div id="options-control">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a href="#"><i class="bi bi-person-circle"></i></a>
+                            </li>
+                            <li id="number-of-favorites">
+                                <a href="#"><i class="bi bi-heart"></i></a>
+                                <span>14</span>
+                            </li>
+                            <li id="cart">
+                                <a href="#"><i class="bi bi-bag"></i></a>
+                                <span>7</span>
+                                <span>R$ 1499,90</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid" id="second-navigation-content">
+                <div class="container py-2" id="menu">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul id="menu-links">
+                            <li>
+                                <a href="#" class="menu-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu-link">Produtos</a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu-link">Promoções</a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu-link">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu-link">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="container p-0" id="banners-container">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="images/banner1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h2>Relógios de luxo</h2>
+                            <p>Para você estar pronto em qualquer situação.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="images/banner2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h2>Linha Importada</h2>
+                            <p>Conheça os melhores relógios suiços, com pronta entrega.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="images/banner3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h2>Third slide label</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="container p-0" id="second-banners-containers">
+            <div class="row container-fluid p-0 m-0">
+                <div class="col-12 col-xl-4" id="mini-banner-1">
+                    <h2>Nova coleção</h2>
+                    <a href="#">Saber mais</a>
+                    <img src="images/relogio1.png" alt="..." class="img-fluid">
+                </div>
+                <div class="col-12 col-xl-4" id="mini-banner-2">
+                    <h2>Promoções</h2>
+                    <a href="#">Saber mais</a>
+                    <img src="images/relogio2.png" alt="..." class="img-fluid">
+                </div>
+                <div class="col-12 col-xl-4" id="mini-banner-3">
+                    <h2>Edição limitada</h2>
+                    <a href="#">Saber mais</a>
+                    <img src="images/relogio3.png" alt="..." class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section class="container p-0">
+            <h2 class="section-title-of-clocks">Best Sellers</h2>
+            <div class="row container-fluid p-0 m-0">
+                <div class="col-12 col-lg-3 cards">
+                    <div>
+                        <img src="images/relogio2.png" alt="...">
+                        <span>Relógio</span>
+                    </div>
+                    <div>
+                        <h3>Nome do produto</h3>
+                        <p>R$ 199.99</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 cards">
+                    <div>
+                        <img src="images/relogio3.png" alt="...">
+                        <span>Relógio</span>
+                    </div>
+                    <div>
+                        <h3>Nome do produto</h3>
+                        <p>R$ 199.99</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 cards">
+                    <div>
+                        <img src="images/relogio8.png" alt="...">
+                        <span>Relógio</span>
+                    </div>
+                    <div>
+                        <h3>Nome do produto</h3>
+                        <p>R$ 199.99</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 cards">
+                    <div>
+                        <img src="images/relogio7.png" alt="...">
+                        <span>Relógio</span>
+                    </div>
+                    <div>
+                        <h3>Nome do produto</h3>
+                        <p>R$ 199.99</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="row" id="promotion-banner">
+                <div class="col-12 col-md-6 p-0">
+                    <span>Desconto de até 75%</span>
+                    <h2>Relógio X</h2>
+                    <p>Presenteie o seu amor com este relógio luxuoso</p>
+                    <a href="#" class="btn">Comprar agora</a>
+                </div>
+                <div class="col-12 col-md-6 p-0">
+                    <img src="images/relogio7.png" alt="...">
+                </div>
+            </div>
+        </section>
+
+        <section class="row container mx-auto g-0">
+            <h2 class="section-title-of-clocks">Novidadades</h2>
+            <div class="col-xl-3" id="news-title">
+                <p>Os melhores</p>
+                <h3>Relógios</h3>
+                <p>Pelos melhores preços</p>
+            </div>
+            <div class="row container-fluid col-xl-9 p-0 m-0">
+                <div class="col-12 col-md-4 col-lg-3 cards">
+                    <div>
+                        <img src="images/relogio4.png" alt="...">
+                        <span>Relógio</span>
+                    </div>
+                    <div>
+                        <h3>Nome do produto</h3>
+                        <p>R$ 199.99</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 cards">
+                    <div>
+                        <img src="images/relogio5.png" alt="...">
+                        <span>Relógio</span>
+                    </div>
+                    <div>
+                        <h3>Nome do produto</h3>
+                        <p>R$ 199.99</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 cards">
+                    <div>
+                        <img src="images/relogio6.png" alt="...">
+                        <span>Relógio</span>
+                    </div>
+                    <div>
+                        <h3>Nome do produto</h3>
+                        <p>R$ 199.99</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 cards">
+                    <div>
+                        <img src="images/relogio8.png" alt="...">
+                        <span>Relógio</span>
+                    </div>
+                    <div>
+                        <h3>Nome do produto</h3>
+                        <p>R$ 199.99</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 cards with-border">
+                    <div>
+                        <img src="images/relogio1.png" alt="...">
+                        <span>Relógio</span>
+                    </div>
+                    <div>
+                        <h3>Nome do produto</h3>
+                        <p>R$ 199.99</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 cards with-border">
+                    <div>
+                        <img src="images/relogio7.png" alt="...">
+                        <span>Relógio</span>
+                    </div>
+                    <div>
+                        <h3>Nome do produto</h3>
+                        <p>R$ 199.99</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 cards with-border">
+                    <div>
+                        <img src="images/relogio3.png" alt="...">
+                        <span>Relógio</span>
+                    </div>
+                    <div>
+                        <h3>Nome do produto</h3>
+                        <p>R$ 199.99</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 cards with-border">
+                    <div>
+                        <img src="images/relogio2.png" alt="...">
+                        <span>Relógio</span>
+                    </div>
+                    <div>
+                        <h3>Nome do produto</h3>
+                        <p>R$ 199.99</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-5">
+
+        <div class="row container-fluid g-0">
+            <div class="col-6 col-lg-2 footer-cards" id="image-container1"></div>
+            <div class="col-6 col-lg-2 footer-cards" id="image-container2"></div>
+            <div class="col-6 col-lg-2 footer-cards" id="image-container3"></div>
+            <div class="col-6 col-lg-2 footer-cards" id="image-container4"></div>
+            <div class="col-6 col-lg-2 footer-cards" id="image-container5"></div>
+            <div class="col-6 col-lg-2 footer-cards" id="image-container6"></div>
+        </div>
+
+        <div id="footer-information-container" class="my-4">
+            <div class="footer-informations">
+                <h3>Páginas</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-informations" id="tel">
+                <h3>Nome da Loja</h3>
+                <p>Alguma dúvida? ligue para nós</p>
+                <div>
+                    <i class="bi bi-telephone"></i>
+                    <p>(XX) XXXXX-XXXX</p>
+                </div>
+            </div>
+            <div class="footer-informations">
+                <h3>Informações</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Política de Entrefas</a></li>
+                    <li><a href="#">Rastreie seu pedido</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid container-newsletter">
+            <div>
+                <h2>Inscreva-se na nossa Newsletter</h2>
+            </div>
+            <div class="search">
+                <i class="bi bi-envelope-at-fill"></i>
+                <form class="input-group">
+                    <input type="search" class="form-control" placeholder="Digite seu e-mail"
+                        aria-label="Digite seu e-mail" aria-describedby="submit-button">
+                    <button type="button" class="btn form-button">Enviar</button>
+                </form>
+            </div>
+            <div>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+
+        <div id="end-of-footer">
+            <p>Todos os direitos reservados @2021 <strong><a href="#">Nome da Loja</a></strong> - A sua loja de relógios</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
